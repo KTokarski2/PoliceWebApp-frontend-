@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>SWPPP</title>
+</head>
+<body>
+
+<header>
+  <h1>System wspomagający pracę posterunku policji</h1>
+  <img src="../../images/swppp-logo.png" alt="SWPPP - system logo" width="130" height="100">
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../../index.html">Strona główna</a></li>
+    <li><a href="">Policjanci</a></li>
+    <li><a href="">Sprawy</a></li>
+    <li><a href="">Uczestnictwo w sprawach</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Edycja funkcjonariusza</h2>
+  <form>
+    <label for="firstName">Imię: *</label>
+    <input type="text" name="firstName" id="firstName" value="Adam" required>
+    <span id="errorFirstName"></span>
+    <label for="lastName">Nazwisko: *</label>
+    <input type="text" name="lastName" id="lastName" value="Małysz" required>
+    <span id="errorLastName"></span>
+    <label for="rank">Stopień: *</label>
+    <input type="text" name="rank" id="rank" value="Starszy aspirant" required>
+    <span id="errorRank"></span>
+    <label for="department">Wydział: *</label>
+    <input type="text" name="department" id="department" value="Ruch drogowy" required>
+    <span id="errorDepartment"></span>
+    <label for="salary">Pensja: *</label>
+    <input type="text" name="salary" id="salary" value="3500.00" required>
+    <span id="errorSalary"></span>
+    <div>
+      <p id="errorsSummary"></p>
+      <input type="submit" value="Edytuj"/>
+      <a href="detalis.html">Anuluj</a>
+    </div>
+  </form>
+
+</main>
+
+<footer>
+  Krzysztof Tokarski s22229
+</footer>
+
+</body>
+</html>

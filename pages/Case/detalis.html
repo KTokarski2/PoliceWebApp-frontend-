@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>SWPPP</title>
+</head>
+<body>
+
+<header>
+  <h1>System wspomagający pracę posterunku policji</h1>
+  <img src="../../images/swppp-logo.png" alt="SWPPP - system logo" width="130" height="100">
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../../index.html">Strona główna</a></li>
+    <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
+    <li><a href="list.html">Sprawy</a></li>
+    <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Szczegóły sprawy</h2>
+  <form>
+    <label for="name">Nazwa: *</label>
+    <input type="text" name="name" value="Kradzież" id="name" disabled>
+    <span id="errorName"></span>
+    <label for="description">Opis sprawy: *</label>
+    <textarea id="description" name="description" rows="5" cols="50" disabled>Dwóch młodych mężczyzn pobiło starszego mężczyzne przy ulicy Wiślanej</textarea>
+    <span id="errorDescription"></span>
+    <label for="startingDate">Data rozpoczęcia: *</label>
+    <input type="date" name="startingDate" value="2022-07-12" id="startingDate" disabled>
+    <span id="errorStartingDate"></span>
+    <label for="closingDate">Data zamknięcia: *</label>
+    <input type="date" name="closingDate" value="2022-07-23" id="closingDate" disabled>
+    <span id="errorClosingDate"></span>
+    <div>
+      <p id="errorsSummary"></p>
+      <a href="form-edit.html">Edytuj</a>
+    </div>
+  </form>
+  <table>
+    <h2>Przypisani funkcjonariusze</h2>
+    <thead>
+    <tr>
+      <th>Policjant</th>
+      <th>Data rozpoczęcia</th>
+      <th>Data zakończenia</th>
+      <th>Podjęte działania</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Sławomir Borewicz</td>
+      <td>2022-09-13</td>
+      <td>2022-09-30</td>
+      <td>Przesłuchano świadków zdarzenia</td>
+    </tr>
+    <tr>
+      <td>Adam Małysz</td>
+      <td>2022-09-13</td>
+      <td>2022-09-15</td>
+      <td>Zabezpieczono materiał dowodowy na miejscu zdarzenia</td>
+    </tr>
+    </tbody>
+  </table>
+  <div>
+    <p id="backToList"></p>
+    <a href="list.html">Powrót</a>
+  </div>
+
+</main>
+
+<footer>
+  Krzysztof Tokarski s22229
+</footer>
+
+</body>
+</html>

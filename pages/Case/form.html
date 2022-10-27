@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>SWPPP</title>
+</head>
+<body>
+
+<header>
+    <h1>System wspomagający pracę posterunku policji</h1>
+    <img src="../../images/swppp-logo.png" alt="SWPPP - system logo" width="130" height="100">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="../../index.html">Strona główna</a></li>
+        <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
+        <li><a href="list.html">Sprawy</a></li>
+        <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Nowa sprawa</h2>
+    <form>
+        <label for="name">Nazwa: *</label>
+        <input type="text" name="name" id="name" required>
+        <span id="errorName"></span>
+        <label for="description">Opis sprawy: *</label>
+        <textarea id="description" name="description" rows="5" cols="50"></textarea>
+        <span id="errorDescription"></span>
+        <label for="startingDate">Data rozpoczęcia: *</label>
+        <input type="date" name="startingDate" id="startingDate" required>
+        <span id="errorStartingDate"></span>
+        <label for="closingDate">Data zamknięcia: *</label>
+        <input type="date" name="closingDate" id="closingDate">
+        <span id="errorClosingDate"></span>
+        <div>
+            <p id="errorsSummary"></p>
+            <input type="submit" value="Dodaj"/>
+            <a href="list.html">Anuluj</a>
+        </div>
+    </form>
+
+</main>
+
+<footer>
+    Krzysztof Tokarski s22229
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>SWPPP</title>
+</head>
+<body>
+
+<header>
+  <h1>System wspomagający pracę posterunku policji</h1>
+  <img src="../../images/swppp-logo.png" alt="SWPPP - system logo" width="130" height="100">
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../../index.html">Strona główna</a></li>
+    <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
+    <li><a href="../Case/list.html">Sprawy</a></li>
+    <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Szczegóły funkcjonariusza</h2>
+  <form>
+    <label for="firstName">Imię: *</label>
+    <input type="text" name="firstName" value="Sławomir" id="firstName" disabled>
+    <span id="errorFirstName"></span>
+    <label for="lastName">Nazwisko: *</label>
+    <input type="text" name="lastName" value="Borewicz" id="lastName" disabled>
+    <span id="errorLastName"></span>
+    <label for="rank">Stopień: *</label>
+    <input type="text" name="rank" value="Inspektor" id="rank" disabled>
+    <span id="errorRank"></span>
+    <label for="department">Wydział: *</label>
+    <input type="text" name="department" value="Kryminalny" id="department" disabled>
+    <span id="errorDepartment"></span>
+    <label for="salary">Pensja: *</label>
+    <input type="text" name="salary" value="6000.00" id="salary" disabled>
+    <span id="errorSalary"></span>
+    <div>
+      <p id="errorsSummary"></p>
+      <a href="form-edit.html">Edytuj</a>
+    </div>
+  </form>
+  <h2>Szczegóły uczestnictwa w sprawach</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Sprawa</th>
+      <th>Data rozpoczęcia</th>
+      <th>Data zakończenia</th>
+      <th>Podjęte działania</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Pobicie</td>
+      <td>2022-09-13</td>
+      <td>2022-09-30</td>
+      <td>Przesłuchano świadków zdarzenia</td>
+    </tr>
+    <tr>
+      <td>Kradzież</td>
+      <td>2022-09-13</td>
+      <td>2022-09-15</td>
+      <td>Zabezpieczono materiał dowodowy na miejscu zdarzenia</td>
+    </tr>
+    </tbody>
+  </table>
+  <div>
+    <p id="backToList"></p>
+    <a href="list.html">Powrót</a>
+  </div>
+
+</main>
+
+<footer>
+  Krzysztof Tokarski s22229
+</footer>
+
+</body>
+</html>

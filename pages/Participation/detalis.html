@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>SWPPP</title>
+</head>
+<body>
+
+<header>
+  <h1>System wspomagający pracę posterunku policji</h1>
+  <img src="../../images/swppp-logo.png" alt="SWPPP - system logo" width="130" height="100">
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../../index.html">Strona główna</a></li>
+    <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
+    <li><a href="../Case/list.html">Sprawy</a></li>
+    <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Szczegóły udziału w sprawie</h2>
+  <form>
+    <label for="policeOfficer">Funkcjonariusz: </label>
+    <select name="policeOfficer" id="policeOfficer" disabled>
+      <option>-- Wybierz funkcjonariusza --</option>
+      <option value="1">Funkcjonariusz 1</option>
+      <option value="2">Funkcjonariusz 2</option>
+    </select>
+    <label for="case">Sprawa: </label>
+    <select name="case" id="case" disabled>
+      <option>-- Wybierz sprawę --</option>
+      <option value="1">Sprawa1</option>
+      <option value="2">Sprawa2</option>
+    </select>
+    <label for="startingDate">Data rozpoczęcia: *</label>
+    <input type="date" name="startingDate" id="startingDate" disabled>
+    <span id="errorStartingDate"></span>
+    <label for="endingDate">Data zakończenia: *</label>
+    <input type="date" name="endingDate" id="endingDate" disabled>
+    <span id="errorEndingDate"></span>
+    <label for="actionTaken">Podjęte działania: *</label>
+    <textarea id="actionTaken" name="actionTaken" rows="5" cols="50" disabled></textarea>
+    <span id="errorActionTaken"></span>
+    <div>
+      <p id="errorsSummary"></p>
+      <a href="list.html">Powrót</a>
+      <a href="form-edit.html">Edytuj</a>
+    </div>
+  </form>
+
+</main>
+
+<footer>
+  Krzysztof Tokarski s22229
+</footer>
+
+</body>
+</html>
