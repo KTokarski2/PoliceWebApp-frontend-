@@ -15,34 +15,34 @@
 <nav>
     <ul>
         <li><a href="../../index.html">Strona główna</a></li>
-        <li><a href="">Policjanci</a></li>
-        <li><a href="">Sprawy</a></li>
-        <li><a href="">Uczestnictwo w sprawach</a></li>
+        <li><a href="list.html">Policjanci</a></li>
+        <li><a href="../Case/list.html">Sprawy</a></li>
+        <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
     </ul>
 </nav>
 
 <main>
     <h2>Nowy pracownik</h2>
-    <form>
-        <label for="firstName">Imię: *</label>
+    <form class="form">
+        <label for="firstName">Imię: <span class="symbol-required">*</span></label>
         <input type="text" name="firstName" id="firstName" required>
         <span id="errorFirstName"></span>
-        <label for="lastName">Nazwisko: *</label>
+        <label for="lastName">Nazwisko: <span class="symbol-required">*</span></label>
         <input type="text" name="lastName" id="lastName" required>
         <span id="errorLastName"></span>
-        <label for="rank">Stopień: *</label>
+        <label for="rank">Stopień: <span class="symbol-required">*</span></label>
         <input type="text" name="rank" id="rank" required>
         <span id="errorRank"></span>
-        <label for="department">Wydział: *</label>
+        <label for="department">Wydział: <span class="symbol-required">*</span></label>
         <input type="text" name="department" id="department" required>
         <span id="errorDepartment"></span>
-        <label for="salary">Pensja: *</label>
+        <label for="salary">Pensja: <span class="symbol-required">*</span></label>
         <input type="text" name="salary" id="salary" required>
         <span id="errorSalary"></span>
-        <div>
+        <div class="form-buttons">
             <p id="errorsSummary"></p>
-            <input type="submit" value="Dodaj"/>
-            <a href="list.html">Anuluj</a>
+            <input class="form-button-submit" type="submit" value="Dodaj"/>
+            <a class="form-button-cancel" href="list.html">Anuluj</a>
         </div>
     </form>
 

@@ -15,40 +15,40 @@
 <nav>
   <ul>
     <li><a href="../../index.html">Strona główna</a></li>
-    <li><a href="">Policjanci</a></li>
-    <li><a href="">Sprawy</a></li>
-    <li><a href="">Uczestnictwo w sprawach</a></li>
+    <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
+    <li><a href="../Case/list.html">Sprawy</a></li>
+    <li><a href="list.html">Uczestnictwo w sprawach</a></li>
   </ul>
 </nav>
 
 <main>
   <h2>Nowy przydział do sprawy</h2>
-  <form>
-    <label for="policeOfficer">Funkcjonariusz: </label>
+  <form class="form">
+    <label for="policeOfficer">Funkcjonariusz: <span class="symbol-required">*</span></label>
     <select name="policeOfficer" id="policeOfficer">
       <option>-- Wybierz funkcjonariusza --</option>
       <option value="1">Funkcjonariusz 1</option>
       <option value="2">Funkcjonariusz 2</option>
     </select>
-    <label for="case">Sprawa: </label>
+    <label for="case">Sprawa: <span class="symbol-required">*</span></label>
     <select name="case" id="case">
       <option>-- Wybierz sprawę --</option>
       <option value="1">Sprawa1</option>
       <option value="2">Sprawa2</option>
     </select>
-    <label for="startingDate">Data rozpoczęcia: *</label>
+    <label for="startingDate">Data rozpoczęcia: <span class="symbol-required">*</span></label>
     <input type="date" name="startingDate" id="startingDate" required>
     <span id="errorStartingDate"></span>
     <label for="endingDate">Data zakończenia: </label>
     <input type="date" name="endingDate" id="endingDate">
     <span id="errorEndingDate"></span>
-    <label for="actionTaken">Podjęte działania: *</label>
+    <label for="actionTaken">Planowane działania: <span class="symbol-required">*</span></label>
     <textarea id="actionTaken" name="actionTaken" rows="5" cols="50" required></textarea>
     <span id="errorActionTaken"></span>
-    <div>
+    <div class="form-buttons">
       <p id="errorsSummary"></p>
-      <input type="submit" value="Dodaj"/>
-      <a href="list.html">Anuluj</a>
+      <input class="form-button-submit" type="submit" value="Dodaj"/>
+      <a class="form-button-cancel" href="list.html">Anuluj</a>
     </div>
   </form>
 

@@ -1,5 +1,5 @@
 html {
-    background-color:lightgrey;
+    background: linear-gradient(to right, #e2eafc, #ccdbfd);
     font-family: sans-serif;
 }
 
@@ -10,7 +10,7 @@ body {
 header,
 main,
 footer {
-    background-color:cornsilk ;
+    background-color: #edf2f4 ;
 }
 
 header,
@@ -63,4 +63,192 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #00a6fb;
     color: #0b090a;
+}
+
+nav ul li a.active {
+    background-color: #00a6fb;
+    color: #0b090a;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+main h2 {
+    border-bottom: 5px solid #0b090a;
+    margin-bottom: 2rem;
+}
+
+.table-list {
+    border-collapse: collapse;
+    color: #0b090a;
+    width: 100%;
+}
+
+.table-list,
+.table-list th,
+.table-list td {
+    border: 1px solid #0b090a;
+}
+
+.table-list th,
+.table-list td {
+    padding: 0.5rem;
+}
+
+.table-list th,
+.table-list tbody tr:nth-child(even) {
+    background-color: #e5e5e5;
+}
+
+.list-actions {
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-actions li {
+    display: inline-block;
+}
+
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete {
+    display: inline-block;
+    width: 75px;
+    padding: 0.25rem 0.5rem;
+}
+
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete,
+.button-add,
+.form-button-submit,
+.form-button-cancel {
+    border: none;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.list-actions-button-details {
+    background-color: #0077b6;
+}
+
+.list-actions-button-details:hover {
+    background-color: #90e0ef;
+}
+
+.list-actions-button-edit {
+    background-color: #ff6d00;
+}
+
+.list-actions-button-edit:hover {
+    background-color: #ff9e00;
+}
+
+.list-actions-button-delete,
+.form-button-cancel {
+    background-color: #ba181b;
+}
+
+.list-actions-button-delete:hover,
+.form-button-cancel:hover {
+    background-color: #e5383b;
+}
+
+.button-add,
+.form-button-submit,
+.form-button-cancel {
+    padding: 0.5rem 1rem;
+}
+
+.button-add,
+.form-button-submit {
+    background-color: #008000;
+}
+
+.button-add:hover,
+.form-button-submit:hover{
+    background-color: #70e000;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.form {
+    margin-left: 2rem;
+    width: 300px;
+}
+
+.form select,
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="date"],
+.form textarea {
+    border: 1px solid #38a3a5;
+    color: #0b090a;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.symbol-required,
+.errors-text{
+    color: #e5383b;
+}
+
+.form-buttons {
+    margin-top: 2rem;
+}
+
+.form-button-submit,
+.form-button-cancel {
+    width: 100%;
+}
+
+.form-button-cancel {
+    box-sizing: border-box;
+    display: block;
+}
+
+.form-button-submit {
+    margin-bottom: 0.5rem;
+}
+
+.form input.error-input,
+.form select.error-input,
+.form textarea.error-input{
+    border: 3px solid #e5383b;
+}
+
+.errors-text {
+    display: block;
+    font-size: 0.85rem;
+    line-height: 2.25rem;
+    margin-top: 0.5rem;
 }

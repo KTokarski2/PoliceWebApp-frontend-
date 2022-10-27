@@ -15,15 +15,15 @@
 <nav>
   <ul>
     <li><a href="../../index.html">Strona główna</a></li>
-    <li><a href="">Policjanci</a></li>
-    <li><a href="">Sprawy</a></li>
-    <li><a href="">Uczestnictwo w sprawach</a></li>
+    <li><a href="list.html">Policjanci</a></li>
+    <li><a href="../Case/list.html">Sprawy</a></li>
+    <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
   </ul>
 </nav>
 
 <main>
   <h2>Edycja funkcjonariusza</h2>
-  <form>
+  <form class="form">
     <label for="firstName">Imię: *</label>
     <input type="text" name="firstName" id="firstName" value="Adam" required>
     <span id="errorFirstName"></span>
@@ -41,8 +41,8 @@
     <span id="errorSalary"></span>
     <div>
       <p id="errorsSummary"></p>
-      <input type="submit" value="Edytuj"/>
-      <a href="detalis.html">Anuluj</a>
+      <input class="form-button-submit" type="submit" value="Edytuj"/>
+      <a class="form-button-cancel" href="detalis.html">Anuluj</a>
     </div>
   </form>
 

@@ -23,26 +23,26 @@
 
 <main>
   <h2>Nowy pracownik</h2>
-  <form>
+  <form class="form">
     <label for="firstName">Imię: *</label>
-    <input type="text" name="firstName" id="firstName" required>
-    <span id="errorFirstName">Pole jest wymagane</span>
+    <input class="error-input" type="text" name="firstName" id="firstName" required>
+    <span id="errorFirstName" class="errors-text">Pole jest wymagane</span>
     <label for="lastName">Nazwisko: *</label>
-    <input type="text" name="lastName" id="lastName" required>
-    <span id="errorLastName">Pole jest wymagane</span>
+    <input class="error-input" type="text" name="lastName" id="lastName" required>
+    <span id="errorLastName" class="errors-text">Pole jest wymagane</span>
     <label for="rank">Stopień: *</label>
-    <input type="text" name="rank" id="rank" required>
-    <span id="errorRank">Pole jest wymagane</span>
+    <input class="error-input" type="text" name="rank" id="rank" required>
+    <span id="errorRank" class="errors-text">Pole jest wymagane</span>
     <label for="department">Wydział: *</label>
-    <input type="text" name="department" id="department" required>
-    <span id="errorDepartment">Pole jest wymagane</span>
+    <input class="error-input" type="text" name="department" id="department" required>
+    <span id="errorDepartment" class="errors-text">Pole jest wymagane</span>
     <label for="salary">Pensja: *</label>
-    <input type="text" name="salary" id="salary" required>
-    <span id="errorSalary">Pole jest wymagane</span>
+    <input class="error-input" type="text" name="salary" id="salary" required>
+    <span id="errorSalary" class="errors-text">Pole jest wymagane</span>
     <div>
       <p id="errorsSummary">Formularz zawiera błędy</p>
-      <input type="submit" value="Dodaj"/>
-      <a href="list.html">Anuluj</a>
+      <input class="form-button-submit" type="submit" value="Dodaj"/>
+      <a class="form-button-cancel" href="list.html">Anuluj</a>
     </div>
   </form>
 

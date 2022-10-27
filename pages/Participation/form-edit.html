@@ -23,23 +23,23 @@
 
 <main>
   <h2>Edycja udziału w sprawie</h2>
-  <form>
+  <form class="form">
     <label for="policeOfficer">Funkcjonariusz: </label>
-    <select name="policeOfficer" id="policeOfficer">
+    <select name="policeOfficer" id="policeOfficer" disabled>
       <option>-- Wybierz funkcjonariusza --</option>
-      <option value="1" selected>Funkcjonariusz 1</option>
+      <option value="1" selected>Sławomir Borewicz</option>
       <option value="2">Funkcjonariusz 2</option>
     </select>
     <label for="case">Sprawa: </label>
-    <select name="case" id="case">
+    <select name="case" id="case" disabled>
       <option>-- Wybierz sprawę --</option>
-      <option value="1" selected>Sprawa1</option>
+      <option value="1" selected>Pobicie</option>
       <option value="2">Sprawa2</option>
     </select>
     <label for="startingDate">Data rozpoczęcia: * </label>
-    <input type="date" name="startingDate" id="startingDate" value="2022-09-20" required>
+    <input type="date" name="startingDate" id="startingDate" value="2022-09-20" disabled>
     <span id="errorStartingDate"></span>
-    <label for="endingDate">Data zakończenia: *</label>
+    <label for="endingDate">Data zakończenia: </label>
     <input type="date" name="endingDate" id="endingDate" value="2022-10-20" required>
     <span id="errorEndingDate"></span>
     <label for="actionTaken">Podjęte działania: *</label>
@@ -47,8 +47,8 @@
     <span id="errorActionTaken"></span>
     <div>
       <p id="errorsSummary"></p>
-      <input type="submit" value="Edytuj"/>
-      <a href="list.html">Anuluj</a>
+      <input class="form-button-submit" type="submit" value="Edytuj"/>
+      <a class="form-button-cancel" href="list.html">Anuluj</a>
     </div>
   </form>
 

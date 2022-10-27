@@ -23,7 +23,7 @@
 
 <main>
   <h2>Szczegóły sprawy</h2>
-  <form>
+  <form class="form">
     <label for="name">Nazwa: *</label>
     <input type="text" name="name" value="Kradzież" id="name" disabled>
     <span id="errorName"></span>
@@ -38,10 +38,10 @@
     <span id="errorClosingDate"></span>
     <div>
       <p id="errorsSummary"></p>
-      <a href="form-edit.html">Edytuj</a>
+      <a class="list-actions-button-edit" href="form-edit.html">Edytuj</a>
     </div>
   </form>
-  <table>
+  <table class="table-list">
     <h2>Przypisani funkcjonariusze</h2>
     <thead>
     <tr>
@@ -68,7 +68,7 @@
   </table>
   <div>
     <p id="backToList"></p>
-    <a href="list.html">Powrót</a>
+    <a class="form-button-submit" href="list.html">Powrót</a>
   </div>
 
 </main>

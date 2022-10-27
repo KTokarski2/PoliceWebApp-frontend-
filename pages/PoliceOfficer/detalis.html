@@ -23,7 +23,7 @@
 
 <main>
   <h2>Szczegóły funkcjonariusza</h2>
-  <form>
+  <form class="form">
     <label for="firstName">Imię: *</label>
     <input type="text" name="firstName" value="Sławomir" id="firstName" disabled>
     <span id="errorFirstName"></span>
@@ -41,11 +41,11 @@
     <span id="errorSalary"></span>
     <div>
       <p id="errorsSummary"></p>
-      <a href="form-edit.html">Edytuj</a>
+      <a class="list-actions-button-edit" href="form-edit.html">Edytuj</a>
     </div>
   </form>
   <h2>Szczegóły uczestnictwa w sprawach</h2>
-  <table>
+  <table class="table-list">
     <thead>
     <tr>
       <th>Sprawa</th>
@@ -71,7 +71,7 @@
   </table>
   <div>
     <p id="backToList"></p>
-    <a href="list.html">Powrót</a>
+    <a class="form-button-submit" href="list.html">Powrót</a>
   </div>
 
 </main>

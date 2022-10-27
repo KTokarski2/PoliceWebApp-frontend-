@@ -17,17 +17,18 @@
     <li><a href="../../index.html">Strona główna</a></li>
     <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
     <li><a href="../Case/list.html">Sprawy</a></li>
-    <li><a href="list.html">Uczestnictwo w sprawach</a></li>
+    <li><a href="list.html" class="active">Uczestnictwo w sprawach</a></li>
   </ul>
 </nav>
 
 <main>
   <h2>Lista udziału w sprawach</h2>
-  <table>
+  <table class="table-list">
     <thead>
     <tr>
       <th>Policjant</th>
       <th>Sprawa</th>
+      <th>Akcje</th>
     </tr>
     </thead>
     <tbody>
@@ -35,15 +36,15 @@
       <td>Adam Małysz</td>
       <td>Pobicie</td>
       <td>
-        <ul>
+        <ul class="list-actions">
           <li>
-            <a href="detalis.html">Szczegóły</a>
+            <a class="list-actions-button-details" href="detalis.html">Szczegóły</a>
           </li>
           <li>
-            <a href="form-edit.html">Edytuj</a>
+            <a class="list-actions-button-edit" href="form-edit.html">Edytuj</a>
           </li>
           <li>
-            <a href="">Usuń</a>
+            <a class="list-actions-button-delete" href="">Usuń</a>
           </li>
         </ul>
       </td>
@@ -52,15 +53,15 @@
       <td>Sławomir Borewicz</td>
       <td>Zabójstwo</td>
       <td>
-        <ul>
+        <ul class="list-actions">
           <li>
-            <a href="detalis.html">Szczegóły</a>
+            <a class="list-actions-button-details" href="detalis.html">Szczegóły</a>
           </li>
           <li>
-            <a href="form-edit.html">Edytuj</a>
+            <a class="list-actions-button-edit" href="form-edit.html">Edytuj</a>
           </li>
           <li>
-            <a href="">Usuń</a>
+            <a class="list-actions-button-delete" href="">Usuń</a>
           </li>
         </ul>
       </td>
@@ -69,22 +70,22 @@
       <td>Kamil Stoch</td>
       <td>Kradzież</td>
       <td>
-        <ul>
+        <ul class="list-actions">
           <li>
-            <a href="detalis.html">Szczegóły</a>
+            <a class="list-actions-button-details" href="detalis.html">Szczegóły</a>
           </li>
           <li>
-            <a href="form-edit.html">Edytuj</a>
+            <a class="list-actions-button-edit" href="form-edit.html">Edytuj</a>
           </li>
           <li>
-            <a href="">Usuń</a>
+            <a class="list-actions-button-delete" href="">Usuń</a>
           </li>
         </ul>
       </td>
     </tr>
     </tbody>
   </table>
-  <p><a href="form.html">Przydziel policjanta do sprawy</a></p>
+  <p><a class="button-add" href="form.html">Przydziel policjanta do sprawy</a></p>
 </main>
 
 <footer>

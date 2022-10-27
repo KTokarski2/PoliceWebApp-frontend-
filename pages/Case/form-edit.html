@@ -23,7 +23,7 @@
 
 <main>
   <h2>Edycja sprawy</h2>
-  <form>
+  <form class="form">
     <label for="name">Nazwa: *</label>
     <input type="text" name="name" id="name" value="Zabójstwo" required>
     <span id="errorName"></span>
@@ -38,8 +38,8 @@
     <span id="errorClosingDate"></span>
     <div>
       <p id="errorsSummary"></p>
-      <input type="submit" value="Dodaj"/>
-      <a href="list.html">Anuluj</a>
+      <input class="form-button-submit" type="submit" value="Edytuj"/>
+      <a class="form-button-cancel" href="list.html">Anuluj</a>
     </div>
   </form>
 

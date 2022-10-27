@@ -23,23 +23,23 @@
 
 <main>
   <h2>Nowa sprawa</h2>
-  <form>
-    <label for="name">Nazwa: *</label>
-    <input type="text" name="name" id="name" required>
-    <span id="errorName">Pole jest wymagane</span>
-    <label for="description">Opis sprawy: *</label>
+  <form class="form">
+    <label for="name">Nazwa: <span class="symbol-required">*</span></label>
+    <input class="error-input" type="text" name="name" id="name" required>
+    <span id="errorName" class="errors-text">Pole jest wymagane</span>
+    <label for="description">Opis sprawy: </label>
     <textarea id="description" name="description" rows="5" cols="50"></textarea>
-    <span id="errorDescription"></span>
-    <label for="startingDate">:Data rozpoczęcia: *</label>
-    <input type="text" name="startingDate" id="startingDate" required>
-    <span id="errorStartingDate">Pole jest wymagane</span>
-    <label for="closingDate">Data zamknięcia: *</label>
+    <span id="errorDescription" class="errors-text"></span>
+    <label for="startingDate">Data rozpoczęcia: <span class="symbol-required">*</span></label>
+    <input class="error-input" type="text" name="startingDate" id="startingDate" required>
+    <span id="errorStartingDate" class="errors-text">Pole jest wymagane</span>
+    <label for="closingDate">Data zamknięcia: </label>
     <input type="text" name="closingDate" id="closingDate">
-    <span id="errorClosingDate"></span>
+    <span id="errorClosingDate" class="errors-text"></span>
     <div>
       <p id="errorsSummary">Formularz zawiera błędy</p>
-      <input type="submit" value="Dodaj"/>
-      <a href="list.html">Anuluj</a>
+      <input class="form-button-submit" type="submit" value="Dodaj"/>
+      <a class="form-button-cancel" href="list.html">Anuluj</a>
     </div>
   </form>
 
