@@ -2,7 +2,9 @@
 <html lang="pl-PL">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" href="../../images/swppp-logo.png" type="image/icon type">
   <title>SWPPP</title>
 </head>
 <body>
@@ -17,35 +19,37 @@
     <li><a href="../../index.html">Strona główna</a></li>
     <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
     <li><a href="../Case/list.html">Sprawy</a></li>
-    <li><a href="list.html">Uczestnictwo w sprawach</a></li>
+    <li><a class="active" href="list.html">Uczestnictwo w sprawach</a></li>
   </ul>
 </nav>
 
 <main>
   <h2>Edycja udziału w sprawie</h2>
   <form class="form">
-    <label for="policeOfficer">Funkcjonariusz: </label>
+    <label for="policeOfficer">Funkcjonariusz: <span class="symbol-required">*</span></label>
     <select name="policeOfficer" id="policeOfficer" disabled>
       <option>-- Wybierz funkcjonariusza --</option>
       <option value="1" selected>Sławomir Borewicz</option>
       <option value="2">Funkcjonariusz 2</option>
     </select>
-    <label for="case">Sprawa: </label>
+    <span id="errorPoliceOfficer"></span>
+    <label for="case">Sprawa: <span class="symbol-required">*</span></label>
     <select name="case" id="case" disabled>
       <option>-- Wybierz sprawę --</option>
       <option value="1" selected>Pobicie</option>
       <option value="2">Sprawa2</option>
     </select>
-    <label for="startingDate">Data rozpoczęcia: * </label>
+    <span id="errorCase"></span>
+    <label for="startingDate">Data rozpoczęcia: <span class="symbol-required">*</span></label>
     <input type="date" name="startingDate" id="startingDate" value="2022-09-20" disabled>
     <span id="errorStartingDate"></span>
     <label for="endingDate">Data zakończenia: </label>
     <input type="date" name="endingDate" id="endingDate" value="2022-10-20" required>
     <span id="errorEndingDate"></span>
-    <label for="actionTaken">Podjęte działania: *</label>
+    <label for="actionTaken">Podjęte działania: <span class="symbol-required">*</span></label>
     <textarea id="actionTaken" name="actionTaken" rows="5" cols="50">Przesłuchano świadków zdarzenia</textarea>
     <span id="errorActionTaken"></span>
-    <div>
+    <div class="form-buttons">
       <p id="errorsSummary"></p>
       <input class="form-button-submit" type="submit" value="Edytuj"/>
       <a class="form-button-cancel" href="list.html">Anuluj</a>

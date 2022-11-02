@@ -2,7 +2,10 @@
 <html lang="pl-PL">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" href="../../images/swppp-logo.png" type="image/icon type">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>SWPPP</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
   <ul>
     <li><a href="../../index.html">Strona główna</a></li>
     <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
-    <li><a href="list.html">Sprawy</a></li>
+    <li><a class="active" href="list.html">Sprawy</a></li>
     <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
   </ul>
 </nav>
@@ -24,16 +27,16 @@
 <main>
   <h2>Szczegóły sprawy</h2>
   <form class="form">
-    <label for="name">Nazwa: *</label>
+    <label for="name">Nazwa: <span class="symbol-required">*</span></label>
     <input type="text" name="name" value="Kradzież" id="name" disabled>
     <span id="errorName"></span>
-    <label for="description">Opis sprawy: *</label>
+    <label for="description">Opis sprawy: <span class="symbol-required">*</span></label>
     <textarea id="description" name="description" rows="5" cols="50" disabled>Dwóch młodych mężczyzn pobiło starszego mężczyzne przy ulicy Wiślanej</textarea>
     <span id="errorDescription"></span>
-    <label for="startingDate">Data rozpoczęcia: *</label>
+    <label for="startingDate">Data rozpoczęcia: <span class="symbol-required">*</span></label>
     <input type="date" name="startingDate" value="2022-07-12" id="startingDate" disabled>
     <span id="errorStartingDate"></span>
-    <label for="closingDate">Data zamknięcia: *</label>
+    <label for="closingDate">Data zamknięcia: <span class="symbol-required">*</span></label>
     <input type="date" name="closingDate" value="2022-07-23" id="closingDate" disabled>
     <span id="errorClosingDate"></span>
     <div>
@@ -56,13 +59,19 @@
       <td>Sławomir Borewicz</td>
       <td>2022-09-13</td>
       <td>2022-09-30</td>
-      <td>Przesłuchano świadków zdarzenia</td>
+      <td><ul class="list-actions">
+        <a class="list-actions-button-details" href="../Participation/detalis.html"><span class="material-symbols-outlined">info</span></a>
+      </ul>
+      </td>
     </tr>
     <tr>
       <td>Adam Małysz</td>
       <td>2022-09-13</td>
       <td>2022-09-15</td>
-      <td>Zabezpieczono materiał dowodowy na miejscu zdarzenia</td>
+      <td><ul class="list-actions">
+        <a class="list-actions-button-details" href="../Participation/detalis.html"><span class="material-symbols-outlined">info</span></a>
+      </ul>
+      </td>
     </tr>
     </tbody>
   </table>

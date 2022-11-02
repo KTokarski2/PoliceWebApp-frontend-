@@ -2,7 +2,9 @@
 <html lang="pl-PL">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" href="../../images/swppp-logo.png" type="image/icon type">
   <title>SWPPP</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
 <nav>
   <ul>
     <li><a href="../../index.html">Strona główna</a></li>
-    <li><a href="list.html">Policjanci</a></li>
+    <li><a class="active" href="list.html">Policjanci</a></li>
     <li><a href="../Case/list.html">Sprawy</a></li>
     <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
   </ul>
@@ -24,23 +26,42 @@
 <main>
   <h2>Nowy pracownik</h2>
   <form class="form">
-    <label for="firstName">Imię: *</label>
+    <label for="firstName">Imię: <span class="symbol-required">*</span></label>
     <input class="error-input" type="text" name="firstName" id="firstName" required>
     <span id="errorFirstName" class="errors-text">Pole jest wymagane</span>
-    <label for="lastName">Nazwisko: *</label>
+    <label for="lastName">Nazwisko: <span class="symbol-required">*</span></label>
     <input class="error-input" type="text" name="lastName" id="lastName" required>
     <span id="errorLastName" class="errors-text">Pole jest wymagane</span>
-    <label for="rank">Stopień: *</label>
-    <input class="error-input" type="text" name="rank" id="rank" required>
+    <label for="rank">Stopień: <span class="symbol-required">*</span></label>
+    <select name="rank" id="rank" required>
+      <option>-- Wybierz stopień --</option>
+      <option value="1">Posterunkowy</option>
+      <option value="2">Starszy posterunkowy</option>
+      <option value="2">Sierżant</option>
+      <option value="2">Starszy sierżant</option>
+      <option value="2">Sierżant sztabowy</option>
+      <option value="2">Młodszy aspirant</option>
+      <option value="2">Aspirant</option>
+      <option value="2">Starszy aspirant</option>
+      <option value="2">Aspirant sztabowy</option>
+      <option value="2">Podkomisarz</option>
+      <option value="2">Komisarz</option>
+      <option value="2">Nadkomisarz</option>
+      <option value="2">Podinspektor</option>
+      <option value="2">Młodszy inspektor</option>
+      <option value="2">Inspektor</option>
+      <option value="2">Nadinspektor</option>
+      <option value="2">Generalny inspektor</option>
+    </select>
     <span id="errorRank" class="errors-text">Pole jest wymagane</span>
-    <label for="department">Wydział: *</label>
+    <label for="department">Wydział: <span class="symbol-required">*</span></label>
     <input class="error-input" type="text" name="department" id="department" required>
     <span id="errorDepartment" class="errors-text">Pole jest wymagane</span>
-    <label for="salary">Pensja: *</label>
-    <input class="error-input" type="text" name="salary" id="salary" required>
+    <label for="salary">Pensja: <span class="symbol-required">*</span></label>
+    <input class="error-input" type="number" name="salary" id="salary" step="0.01" required>
     <span id="errorSalary" class="errors-text">Pole jest wymagane</span>
-    <div>
-      <p id="errorsSummary">Formularz zawiera błędy</p>
+    <div class="form-buttons">
+      <p class="errors-text" id="errorsSummary">Formularz zawiera błędy</p>
       <input class="form-button-submit" type="submit" value="Dodaj"/>
       <a class="form-button-cancel" href="list.html">Anuluj</a>
     </div>

@@ -2,7 +2,9 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../images/swppp-logo.png" type="image/icon type">
     <title>SWPPP</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
         <li><a href="../../index.html">Strona główna</a></li>
         <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
         <li><a href="../Case/list.html">Sprawy</a></li>
-        <li><a href="list.html">Uczestnictwo w sprawach</a></li>
+        <li><a class="active" href="list.html">Uczestnictwo w sprawach</a></li>
     </ul>
 </nav>
 
@@ -25,14 +27,14 @@
     <h2>Nowy udział w sprawie</h2>
     <form class="form">
         <label for="policeOfficer">Funkcjonariusz: <span class="symbol-required">*</span></label>
-        <select class="error-input" name="policeOfficer" id="policeOfficer" disabled>
+        <select class="error-input" name="policeOfficer" id="policeOfficer">
             <option>-- Wybierz funkcjonariusza --</option>
             <option value="1">Funkcjonariusz 1</option>
             <option value="2">Funkcjonariusz 2</option>
         </select>
         <span id="errorPoliceOfficer" class="errors-text">Pole jest wymagane</span>
         <label for="case">Sprawa: <span class="symbol-required">*</span></label>
-        <select class="error-input" name="case" id="case" disabled>
+        <select class="error-input" name="case" id="case">
             <option>-- Wybierz sprawę --</option>
             <option value="1">Sprawa1</option>
             <option value="2">Sprawa2</option>
@@ -47,8 +49,8 @@
         <label for="actionTaken">Podjęte działania: <span class="symbol-required">*</span></label>
         <textarea class="error-input" id="actionTaken" name="actionTaken" rows="5" cols="50" required></textarea>
         <span id="errorActionTaken" class="errors-text">Pole jest wymagane</span>
-        <div>
-            <p id="errorsSummary">Formularz zawiera błędy</p>
+        <div class="form-buttons">
+            <p class="errors-text" id="errorsSummary">Formularz zawiera błędy</p>
             <input class="form-button-submit" type="submit" value="Edytuj"/>
             <a class="form-button-cancel" href="list.html">Anuluj</a>
         </div>

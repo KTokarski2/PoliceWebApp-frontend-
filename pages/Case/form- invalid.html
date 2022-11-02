@@ -2,7 +2,9 @@
 <html lang="pl-PL">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" href="../../images/swppp-logo.png" type="image/icon type">
   <title>SWPPP</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
   <ul>
     <li><a href="../../index.html">Strona główna</a></li>
     <li><a href="../PoliceOfficer/list.html">Policjanci</a></li>
-    <li><a href="list.html">Sprawy</a></li>
+    <li><a class="active" href="list.html">Sprawy</a></li>
     <li><a href="../Participation/list.html">Uczestnictwo w sprawach</a></li>
   </ul>
 </nav>
@@ -31,13 +33,13 @@
     <textarea id="description" name="description" rows="5" cols="50"></textarea>
     <span id="errorDescription" class="errors-text"></span>
     <label for="startingDate">Data rozpoczęcia: <span class="symbol-required">*</span></label>
-    <input class="error-input" type="text" name="startingDate" id="startingDate" required>
+    <input class="error-input" type="date" name="startingDate" id="startingDate" required>
     <span id="errorStartingDate" class="errors-text">Pole jest wymagane</span>
     <label for="closingDate">Data zamknięcia: </label>
-    <input type="text" name="closingDate" id="closingDate">
+    <input type="date" name="closingDate" id="closingDate">
     <span id="errorClosingDate" class="errors-text"></span>
-    <div>
-      <p id="errorsSummary">Formularz zawiera błędy</p>
+    <div class="form-buttons">
+      <p class="errors-text" id="errorsSummary">Formularz zawiera błędy</p>
       <input class="form-button-submit" type="submit" value="Dodaj"/>
       <a class="form-button-cancel" href="list.html">Anuluj</a>
     </div>
