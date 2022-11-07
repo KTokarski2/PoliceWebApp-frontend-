@@ -296,6 +296,7 @@ textarea {
 }
 
 @media all and (max-width: 400px) {
+
     body {
         min-width: 360px;
     }
@@ -343,4 +344,5 @@ textarea {
     .form-buttons {
         grid-column: 1 / 1;
     }
+
 }
