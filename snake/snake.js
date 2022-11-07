@@ -1,16 +1,9 @@
 const canvas = document.getElementById("canvas")
 const canvasContext = canvas.getContext('2d')
-const arcadeFont = new FontFace('Arcade', 'url(./ARCADE_I.ttf)');
 
-arcadeFont.load().then(function(font){
 
-    // with canvas, if this is ommited won't work
-    document.fonts.add(font);
-    console.log('Arcade Font loaded');
 
-});
-
-let fps = 15; //Higher, the faster game goes
+let fps = 15;
 let gameOver = false;
 let highscore = localStorage.getItem("highscore");
 
@@ -24,7 +17,7 @@ window.onload = () => {
 }
 
 function gameLoop() {
-    setInterval(show, 1000/fps) // here 15 is our fps value
+    setInterval(show, 1000/fps)
 }
 
 function show() {
