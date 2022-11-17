@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../images/swppp-logo.png" type="image/icon type">
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../js/validationPoliceOfficerForm.js"></script>
     <title>SWPPP</title>
 </head>
 <body>
@@ -25,12 +27,12 @@
 
 <main>
     <h2>Nowy pracownik</h2>
-    <form class="form">
+    <form class="form" novalidate onsubmit="return validateForm(event);">
         <label for="firstName">Imię: <span class="symbol-required">*</span></label>
-        <input type="text" name="firstName" id="firstName" required>
+        <input type="text" name="firstName" id="firstName" placeholder="2-50 znaków" required>
         <span id="errorFirstName"></span>
         <label for="lastName">Nazwisko: <span class="symbol-required">*</span></label>
-        <input type="text" name="lastName" id="lastName" required>
+        <input type="text" name="lastName" id="lastName" placeholder="2-50 znaków" required>
         <span id="errorLastName"></span>
         <label for="rank">Stopień: <span class="symbol-required">*</span></label>
         <select name="rank" id="rank" required>
@@ -55,10 +57,10 @@
         </select>
         <span id="errorRank"></span>
         <label for="department">Wydział: <span class="symbol-required">*</span></label>
-        <input type="text" name="department" id="department" required>
+        <input type="text" name="department" id="department" placeholder="2-50 znaków" required>
         <span id="errorDepartment"></span>
         <label for="salary">Pensja: <span class="symbol-required">*</span></label>
-        <input type="number" name="salary" id="salary" step="0.01" required>
+        <input type="number" name="salary" id="salary" step="0.01" placeholder="np. 3000.00 zł" required>
         <span id="errorSalary"></span>
         <div class="form-buttons">
             <p id="errorsSummary"></p>
@@ -72,6 +74,6 @@
 <footer>
     Krzysztof Tokarski s22229
 </footer>
-
+<script>document.getElementById("errorsSummary").innerText="xD";</script>
 </body>
 </html>
