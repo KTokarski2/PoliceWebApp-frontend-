@@ -69,6 +69,9 @@ function validateForm(event) {
         errorsSummary.innerText = "Formularz zawiera błędy";
     }
 
+
+
+
     return valid;
 }
 

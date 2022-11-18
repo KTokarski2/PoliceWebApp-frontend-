@@ -9,7 +9,6 @@ function resetErrors(inputs, errorsTexts, errorInfo) {
     for (let i = 0; i < errorsTexts.length; i++) {
         errorsTexts[i].innerText = "";
     }
-    console.log(errorInfo)
 
 
 }
@@ -70,6 +69,35 @@ function checkNumber(value) {
         return false;
     }
     if (isNaN(value)) {
+        return false;
+    }
+
+    return true;
+}
+
+function checkDateIfAfter(value, compareTo) {
+    if(!value) {
+        return false;
+    }
+
+    if(!compareTo) {
+        return false;
+    }
+
+    const pattern = /(\d{4})-(\d{2})-(\d{2})/;
+
+    if(!pattern.test(value)) {
+        return false;
+    }
+
+    if(!pattern.test(compareTo)) {
+        return false;
+    }
+
+    const valueDate = new Date(value);
+    const compareToDate = new Date(compareTo);
+
+    if (valueDate.getTime() < compareToDate.getTime()) {
         return false;
     }
 
