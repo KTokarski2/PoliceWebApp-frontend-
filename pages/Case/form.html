@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../images/swppp-logo.png" type="image/icon type">
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../js/validationCaseForm.js"></script>
     <title>SWPPP</title>
 </head>
 <body>
@@ -25,21 +27,21 @@
 
 <main>
     <h2>Nowa sprawa</h2>
-    <form class="form">
+    <form class="form" novalidate onsubmit="return validateForm(event);">
         <label for="name">Nazwa: <span class="symbol-required">*</span></label>
         <input type="text" name="name" id="name" required>
-        <span id="errorName"></span>
+        <span id="errorName" class="errors-text"></span>
         <label for="description">Opis sprawy: </label>
         <textarea id="description" name="description" rows="5" cols="50"></textarea>
-        <span id="errorDescription"></span>
+        <span id="errorDescription" class="errors-text"></span>
         <label for="startingDate">Data rozpoczęcia: <span class="symbol-required">*</span></label>
         <input type="date" name="startingDate" id="startingDate" required>
-        <span id="errorStartingDate"></span>
+        <span id="errorStartingDate" class="errors-text"></span>
         <label for="closingDate">Data zamknięcia: </label>
         <input type="date" name="closingDate" id="closingDate">
-        <span id="errorClosingDate"></span>
+        <span id="errorClosingDate" class="errors-text"></span>
         <div class="form-buttons">
-            <p id="errorsSummary"></p>
+            <p id="errorsSummary" class="errors-text"></p>
             <input class="form-button-submit" type="submit" value="Dodaj"/>
             <a class="form-button-cancel" href="list.html">Anuluj</a>
         </div>

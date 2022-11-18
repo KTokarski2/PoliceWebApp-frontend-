@@ -3,7 +3,6 @@
 
 function validateForm(event) {
 
-    event.preventDefault();
     const firstNameInput = document.getElementById('firstName');
     const lastNameInput = document.getElementById('lastName');
     const rankInput = document.getElementById('rank');
@@ -44,7 +43,7 @@ function validateForm(event) {
         errorLastName.innerText = "Pole powinno zwierać od 2 do 50 znaków";
     }
 
-    if (!checkRequired(rankInput.value)) {
+    if (!checkSelected(rankInput.value)) {
         valid = false;
         rankInput.classList.add("error-input");
         errorRank.innerText = "Należy wybrać stopień";
