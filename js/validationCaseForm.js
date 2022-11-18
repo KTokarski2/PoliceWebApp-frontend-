@@ -26,10 +26,12 @@ function validateForm(event) {
         errorName.innerText = "Pole powinno zawierać od 2 do 50 znaków";
     }
 
-    if (!checkTextLengthRange(descriptionInput.value,0,100)) {
-        valid = false;
-        descriptionInput.classList.add("error-input");
-        errorDescription.innerText = "Opis powinien się składać z maksymalnie 50 znaków";
+    if (descriptionInput.value != "") {
+        if (!checkTextLengthRange(descriptionInput.value,1,100)) {
+            valid = false;
+            descriptionInput.classList.add("error-input");
+            errorDescription.innerText = "Pole powinno zawierać od 1 do 100 znaków";
+        }
     }
 
     let nowDate = new Date(),
@@ -50,7 +52,7 @@ function validateForm(event) {
     } else if (!checkDate(startingDateInput.value)) {
         valid = false;
         startingDateInput.classList.add("error-input");
-        errorStartingDate.innerText = "Pole powinnno zwierać datę w formacie yyyy-MM-dd (np. 2000-01-01)"
+        errorStartingDate.innerText = "Pole powinnno zwierać datę w formacie yyyy-MM-dd (np. 2000-01-01)";
     } else if (checkDateIfAfter(startingDateInput.value, nowString)) {
         valid = false;
         startingDateInput.classList.add("error-input");
@@ -60,6 +62,18 @@ function validateForm(event) {
         valid = false;
         closingDateInput.classList.add("error-input");
         errorClosingDate.innerText = "Data zakończenia powinna być późniejsza niż data rozpoczęcia";
+    }
+
+    if (closingDateInput.value != "") {
+        if (!checkDate(closingDateInput.value)) {
+            valid = false;
+            startingDateInput.classList.add("error-input");
+            errorClosingDate.innerText = "Pole powinnno zwierać datę w formacie yyyy-MM-dd (np. 2000-01-01)";
+        } else if (checkDateIfAfter(closingDateInput.value, nowString)) {
+            valid = false;
+            closingDateInput.classList.add("error-input");
+            errorClosingDate.innerText = "Data nie może być z przyszłości";
+        }
     }
 
     if(!valid) {
